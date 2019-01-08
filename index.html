@@ -12,7 +12,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -21,54 +22,85 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-  <header>
-    <h1>Cherie-Lee Mason</h1>
-    <h2>Developer</h2>
+  <header class="header">
+    <h1 class="name">Cherie-Lee Mason <br> <small>Web Developer</small></h1>
+    <div class="phrase-row">
+      <p class="left-align">Minimalist Design</p>
+      <p class="center-align">Mobile First</p>
+      <p class="right-align">Intuitive Functionality</p>
+    </div>
+
   </header>
-  <main>
-    <section id=project1 class="projects">
-      <h2>React Map App</h2>
+  <main class="container-fluid">
+    <div class="project-container">
+    <section id=project1 class="projects project-box">
+      <h1>React Map App</h1>
       <div class="project-pic"><a href="https://clsoar.github.io/react-map-page/" target="_blank"><img src="img/react-map.PNG" alt="Screen capture of a vacation rental map application."/></a></div>
-      <p>A single-page map app created with React that allows users to view vacation accomadations, filter them by available amenities, see them on the map, and view details of each place within a pop-up informational window.</p>
-      <p>Integrates Google Maps API with a third-party API to incorporate location data into the map</p>
-      <p>Utilizes the react-google-maps component library.</p>
-      <p><a href="https://clsoar.github.io/react-map-page/" target="_blank">React Map App Live Application</a></p>
-      <p><a href="https://github.com/clsoar/react-map-page" target="_blank">React Map App Repo</a></p>
+      <div class="project-info">
+        <p>A single-page map app created with React that allows users to view vacation accomadations, filter them by available amenities, see them on the map, and view details of each place within a pop-up informational window.</p>
+        <p>Integrates Google Maps API with a third-party API to incorporate location data into the map</p>
+        <p>Utilizes the react-google-maps component library.</p>
+        <p><a href="https://clsoar.github.io/react-map-page/" target="_blank">React Map App Live Application</a></p>
+        <p><a href="https://github.com/clsoar/react-map-page" target="_blank">React Map App Repo</a></p>
+      </div>
     </section>
-    <section id=project2 class="projects">
-      <h2>My Reads Bookshelf App</h2>
+    <section id=project2 class="projects project-box">
+      <h1>My Reads Bookshelf App</h1>
       <div class="project-pic"><a href="https://clsoar.github.io/myreads-react-project/" target="_blank"><img src="img/bookshelf-app.PNG" alt="Screen capture of a virtual bookshelf sorting application."/></a></div>
-      <p>A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.</p>
-      <p>React is used to build the application and an API server and client library are utilized that update information as you interact with the application.</p>
-      <p><a href="https://clsoar.github.io/myreads-react-project/" target="_blank">My Reads Bookshelf Live Application</a></p>
-      <p><a href="https://github.com/clsoar/myreads-react-project" target="_blank">My Reads Bookshelf App Repo</a></p>
+      <div class="project-info">
+        <p>A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.</p>
+        <p>React is used to build the application and an API server and client library are utilized that update information as you interact with the application.</p>
+        <p><a href="https://clsoar.github.io/myreads-react-project/" target="_blank">My Reads Bookshelf Live Application</a></p>
+        <p><a href="https://github.com/clsoar/myreads-react-project" target="_blank">My Reads Bookshelf App Repo</a></p>
+      </div>
     </section>
-    <section id=project3 class="projects">
-      <h2>Memory Card Game</h2>
+    <section id=project3 class="projects project-box">
+      <h1>Memory Card Game</h1>
       <div class="project-pic"><a href="https://clsoar.github.io/memory-card-game/" target="_blank"><img src="img/memory-card-game.PNG" alt="Screen capture of a memory card matching game."/></a></div>
-      <p>A memory card game written in HTML, CSS, and JavaScript.</p>
-      <p>Includes a game timer, move counter, star rating, win popup, and reset button.</p>
-      <p><a href="https://clsoar.github.io/memory-card-game/" target="_blank">Memory Card Game Live Preview</a></p>
-      <p><a href="https://github.com/clsoar/memory-card-game" target="_blank">Memory Card Game Repo</a></p>
+      <div class="project-info">
+        <p>A memory card game written in HTML, CSS, and JavaScript.</p>
+        <p>Includes a game timer, move counter, star rating, win popup, and reset button.</p>
+        <p><a href="https://clsoar.github.io/memory-card-game/" target="_blank">Memory Card Game Live Preview</a></p>
+        <p><a href="https://github.com/clsoar/memory-card-game" target="_blank">Memory Card Game Repo</a></p>
+      </div>
     </section>
-    <section id=project4 class="projects">
-      <h2>Restuarant Reviews</h2>
+    <section id=project4 class="projects project-box">
+      <h1>Restuarant Reviews</h1>
       <div class="project-pic"><a href="https://clsoar.github.io/restaurant-stage-1/" target="_blank"><img src="img/restaurant-reviews.PNG" alt="Screen capture of a memory card matching game."/></a></div>
-      <p>The goal for this project was to take a static webpage and make it into an offline-capable, accessibility-enhanced, mobile-ready web application. The site itself contains restaurant information and reviews with a map application embedded in the site.</p>
-      <p>The project was written with HTML, CSS, and JavaScript, utilizing Mapbox API</p>
-      <p><a href="https://clsoar.github.io/restaurant-stage-1/" target="_blank">Restaurant Reviews Live Preview</a></p>
-      <p><a href="https://github.com/clsoar/restaurant-stage-1" target="_blank">Restaurant Reviews Repo</a></p>
-
+      <div class="project-info">
+        <p>The goal for this project was to take a static webpage and make it into an offline-capable, accessibility-enhanced, mobile-ready web application. The site itself contains restaurant information and reviews with a map application embedded in the site.</p>
+        <p>The project was written with HTML, CSS, and JavaScript, utilizing Mapbox API</p>
+        <p><a href="https://clsoar.github.io/restaurant-stage-1/" target="_blank">Restaurant Reviews Live Preview</a></p>
+        <p><a href="https://github.com/clsoar/restaurant-stage-1" target="_blank">Restaurant Reviews Repo</a></p>
+      </div>
     </section>
+  </div>
+
     <section id="contact" class="contact">Contact</section>
-    <section id=earlywork1 class="earlywork">
-      <h2>Pixel Maker</h2>
-      <div class="earlywork-pic"><a href="https://codepen.io/skymonkey/full/qpwWEX" target="_blank"><img src="img/restaurant-reviews.PNG" alt="Screen capture of a memory card matching game."/></a></div>
-      <p>Pixel Art Maker created with HTML, CSS, jQuery, and JavaScript.</p>
-      <p><a href="https://codepen.io/skymonkey/full/qpwWEX" target="_blank">Memory Card Game Live Preview</a></p>
-
+    <section id="earlywork1" class="earlywork">
+      <h1>Pixel Painter</h1>
+      <div class="earlywork-pic"><a href="https://clsoar.github.io/pixel-painter/" target="_blank"><img src="img/pixel-maker.PNG" alt="Screen capture of a memory card matching game."/></a></div>
+      <div class="project-info">
+        <p>Pixel Art Maker created with HTML, CSS, jQuery, and JavaScript.</p>
+        <p><a href="https://clsoar.github.io/pixel-painter/" target="_blank">Memory Card Game Live Preview</a></p>
+      </div>
     </section>
-
+    <section id="earlywork2" class="earlywork">
+      <h1>Pixel Maker</h1>
+      <div class="earlywork-pic"><a href="https://clsoar.github.io/simple-arcade-game/" target="_blank"><img src="img/pixel-maker.PNG" alt="Screen capture of a memory card matching game."/></a></div>
+      <div class="project-info">
+        <p>A frogger-like arcade game in javascript.</p>
+        <p><a href="https://clsoar.github.io/simple-arcade-game/" target="_blank">Memory Card Game Live Preview</a></p>
+      </div>
+    </section>
+    <section id="earlywork3" class="earlywork">
+      <h1>Pixel Maker</h1>
+      <div class="earlywork-pic"><a href="https://clsoar.github.io/pixel-painter/" target="_blank"><img src="img/pixel-maker.PNG" alt="Screen capture of a memory card matching game."/></a></div>
+      <div class="project-info">
+        <p>Pixel Art Maker created with HTML, CSS, jQuery, and JavaScript.</p>
+        <p><a href="https://clsoar.github.io/pixel-painter/" target="_blank">Memory Card Game Live Preview</a></p>
+      </div>
+    </section>
   </main>
   <footer>footer</footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

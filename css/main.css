@@ -96,16 +96,82 @@ textarea {
 /* ==========================================================================
    CL's custom styles
    ========================================================================== */
-.projects {
+body{
+  font-family: Verdana;
+}
 
+header {
+  height: 100vh;
+}
+
+.name {
+  text-align: center;
+  padding-bottom: 15vh;
+  padding-top: 15vh;
+}
+
+.phrase-row {
+  display: grid;
+  grid: 15vh 15vh 15vh / 1fr;
+  grid-gap: 5px;
+}
+
+.phrase-row p {
+  padding: 10px;
+
+}
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.project-container {
+  display: grid;
+  grid: repeat(100vh / 1fr);
+  grid-gap: 10px;
+}
+
+.projects {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-box {
+  display: grid;
+  grid: auto / 1fr;
+
+}
+
+.projects h1 {
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .project-pic img {
-  width: 50%;
+  width: 100%;
 }
 
+.project-info {
+  padding: 10px;
 
+}
 
+.earlywork {
+  width: 100%;
+}
+
+.earlywork-pic img {
+  width: 100%;
+}
 
 
 
