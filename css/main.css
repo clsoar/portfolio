@@ -96,21 +96,24 @@ textarea {
 /* ==========================================================================
    CL's custom styles
    ========================================================================== */
+/*color pallete black #080706 offwhite #EFEFEF goldish #D1B280 brass #594D46*/
+
 body{
   font-family: Verdana;
+  background-color: #efefef;
+  color: #080706;
 }
 
 header {
   height: 100vh;
-  background-color: black;
-  color: #f6f2ee;
+  background-color: #080706;
+  color: #EFEFEF;
 }
 
 .name {
   text-align: center;
-  padding-bottom: 20vh;
-  padding-top: 20vh;
   margin: 0px;
+  padding: 20vh 0px 20vh 0px;
 }
 
 .phrase-row {
@@ -134,6 +137,10 @@ header {
 
 .right-align {
   padding-left: 35vw;
+}
+
+.section-header {
+  
 }
 
 .project-container {
@@ -170,6 +177,9 @@ header {
 
 .contact {
   text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-color: #efefef;
 }
 
 .fa-envelope-square {
@@ -191,12 +201,11 @@ header {
 }
 
 .media {
-  padding: 5vw;
 }
 
 .earlywork {
-  width: 90%;
-  border: 1px solid #d1d1e0;
+  width: 92%;
+  border: 2px solid #594D46;
 }
 
 .earlywork-container {
@@ -233,7 +242,19 @@ header {
   width: 100%;
 }
 
+footer {
+  background-color: #080706;
+  color: #efefef;
+  text-align: center;
+  font-size: .5em;
+  padding-top: 10px;
+}
 
+.copyright {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+}
 
 
 
