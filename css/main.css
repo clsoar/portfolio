@@ -102,12 +102,15 @@ body{
 
 header {
   height: 100vh;
+  background-color: black;
+  color: #f6f2ee;
 }
 
 .name {
   text-align: center;
-  padding-bottom: 15vh;
-  padding-top: 15vh;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+  margin: 0px;
 }
 
 .phrase-row {
@@ -117,20 +120,20 @@ header {
 }
 
 .phrase-row p {
-  padding: 10px;
+
 
 }
 
 .left-align {
-  text-align: left;
+  padding-left: 15vw;
 }
 
 .center-align {
-  text-align: center;
+  padding-left: 25vw;
 }
 
 .right-align {
-  text-align: right;
+  padding-left: 35vw;
 }
 
 .project-container {
@@ -165,8 +168,65 @@ header {
 
 }
 
+.contact {
+  text-align: center;
+}
+
+.fa-envelope-square {
+  font-size: 3em;
+  color: #dd4b39;
+  background: white;
+}
+
+.fa-linkedin {
+  font-size: 3em;
+  color: #007bb5;
+  background: white;
+}
+
+.fa-github {
+  font-size: 3em;
+  background: white;
+  color: black;
+}
+
+.media {
+  padding: 5vw;
+}
+
 .earlywork {
-  width: 100%;
+  width: 90%;
+  border: 1px solid #d1d1e0;
+}
+
+.earlywork-container {
+  display: grid;
+  grid: [row1-start] "header header header" 10vh [row1-end]
+        [row2-start] "work1 work2 work3" 90vh [row2-end]
+        / 1fr 1fr 1fr;
+}
+
+#earlywork1 {
+  grid-area: work1;
+}
+
+#earlywork2 {
+  grid-area: work2;
+}
+
+#earlywork3 {
+  grid-area: work3;
+}
+
+.earlywork-container h1 {
+  grid-area: header;
+  font-size: 1.5em;
+}
+
+
+.earlywork h1 {
+  font-size: 1em;
+  text-align: center;
 }
 
 .earlywork-pic img {
