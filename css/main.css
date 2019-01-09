@@ -215,7 +215,7 @@ header {
 .earlywork-container {
   display: grid;
   grid: [row1-start] "header header header" 10vh [row1-end]
-        [row2-start] "work1 work2 work3" 90vh [row2-end]
+        [row2-start] "work1 work2 work3" 70vh [row2-end]
         / 1fr 1fr 1fr;
 }
 
@@ -343,6 +343,13 @@ footer {
 /*==========================================================================
   for desktops and large screens
   =========================================================================*/
+  @media screen and (min-width: 1000px){
+    .phrase-row{
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 
 
